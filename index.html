@@ -6,27 +6,23 @@
     <title>Eren's Site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="your_icon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <nav class="navbar">
-        <img src="your_logo.png" alt="Logo" style="width: 75px;">
-        <h1><a href="index.html">Home</a></h1>
-
+        <h1><a href="index.html" class="homepage">Home</a></h1>
         <ul class="nav-links">
             <li class="dropdown">
                 <a href="#">About Me</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">deneme1</a></li>
-                    <li><a href="#">deneme2</a></li>
-                    <li><a href="#">deneme3</a></li>
-                </ul>
             </li>
             <li class="dropdown">
-                <a href="#">Software</a>
+                <a href="#">Programming</a>
                 <ul class="dropdown-content">
-                    <li><a href="#">merhaba</a></li>
-                    <li><a href="#">merhaba2</a></li>
-                    <li><a href="#">merhaba3</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Assembly</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -38,48 +34,108 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#">Homeworks</a>
+                <a href="#">Awards</a>
                 <ul class="dropdown-content">
-                    <li><a href="#">Etkinlik 1</a></li>
-                    <li><a href="#">Etkinlik 2</a></li>
-                    <li><a href="#">Etkinlik 3</a></li>
+                    <li><a href="#">Award 1</a></li>
+                    <li><a href="#">Award 2</a></li>
+                    <li><a href="#">Award 3</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#">Achievements</a>
+                <a href="#">School</a>
                 <ul class="dropdown-content">
-                    <li><a href="#">proje1</a></li>
-                    <li><a href="#">proje2</a></li>
-                    <li><a href="#">proje3</a></li>
+                    <li><a href="#">School 1</a></li>
+                    <li><a href="#">School 2</a></li>
+                    <li><a href="#">School 3</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#">Contact</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">iletisim1</a></li>
-                    <li><a href="#">iletisim2</a></li>
-                    <li><a href="#">iletisim3</a></li>
-                </ul>
+                <a href="#">Certificates</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Blogs</a>
+            </li>
+            <li class="dropdown">
+                <a href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
 
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="container">
+            <p>printf("Hello, World!\n");</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+        <img src="website/images/myphoto.jpg" alt="Eren's Photo" class="profile-photo">
+        <div class="about-me-text">
+            <p>I am H. Eren, a young software developer with a passion for creating innovative solutions.</p>
+            <p>With a background in embedded systems, I enjoy tackling complex problems and continuously learning new technologies.</p>
+            <p>In my free time, I read documentations of programming languages I use, work on personal projects, watch courses and share my knowledge through blog posts.</p>
+            <p>I always try to learn new skills as many as possible.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Radar Chart -->
+            <div class="chart-container">
+                <canvas id="skillChart"></canvas>
+            </div>
+            <!-- Skill Bars -->
+            <div class="skills-bars">
+                <div class="skill">
+                    <h3 title="C">C</h3>
+                    <div class="range" style="--p:60">
+                        <div class="range__label">60%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 title="CPP">C++</h3>
+                    <div class="range" style="--p:60">
+                        <div class="range__label">60%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 title="Java">Java</h3>
+                    <div class="range" style="--p:50">
+                        <div class="range__label">50%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 title="Python">Python</h3>
+                    <div class="range" style="--p:30">
+                        <div class="range__label">40%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 title="Git">Assembly</h3>
+                    <div class="range" style="--p:10">
+                        <div class="range__label">10%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Blog Section -->
     <section class="blog-section">
         <h2>Latest Blog Posts</h2>
-
         <div class="blog-post">
             <h3><a href="#">Blog Post 1</a></h3>
             <p>This is a preview of the first blog post. Click on the title to read more!</p>
             <span class="blog-date">Posted on: 01/01/2024</span>
         </div>
-
         <div class="blog-post">
             <h3><a href="#">Blog Post 2</a></h3>
             <p>This is a preview of the second blog post. Click on the title to read more!</p>
             <span class="blog-date">Posted on: 02/01/2024</span>
         </div>
-
         <div class="blog-post">
             <h3><a href="#">Blog Post 3</a></h3>
             <p>This is a preview of the third blog post. Click on the title to read more!</p>
@@ -87,9 +143,40 @@
         </div>
     </section>
 
-    <!-- Copyright Section -->
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Habil Eren Türker. All rights reserved.</p>
     </footer>
+
+    <script>
+        const ctx = document.getElementById('skillChart').getContext('2d');
+        const skillChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Embedded Development', 'Software Eng.', 'Web Development',
+                'Machine Learning', 'Data Science', 'Mobile Dev.', 'DevOps',],
+                datasets: [{
+                    label: 'Fields',
+                    data: [100, 100, 50, 30, 30, 30, 60,],
+                    backgroundColor: 'rgba(120, 255, 120, 0.2)',
+                    borderColor: 'rgba(0, 255, 0, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true, /* Keep the chart proportional */
+                scales: {
+                    r: { /* Radar chart-specific options */
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                        
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
